@@ -51,13 +51,13 @@ print(states_list)
 
 #Again using the specific syntax mentioned in class overwrite the second to last element to be Maine, printing the list 
 
-states_list.insert(1, "maine")
+states_list[-2]= "Maine"
 
 print(states_list)
 
 #Insert the state Texas to be the third element in the list, again printing your list
 
-states_list.insert(2, "texas")
+states_list.insert(2, "Texas")
 
 print(states_list)
 
@@ -69,27 +69,24 @@ print(states_list)
 
 #Remove Texas using its value, print the list
 
-states_list.remove(states_list[2])
+states_list.remove("Texas")
 
 print(states_list)
 
 print("Part Three----------------------------------------------------------------------")
 #Temporarily sort your list, print it both sorted and unsorted 
 
-states_list.sort()
+print(sorted(states_list))
 
-print(states_list)
+
+#Permanently sort your list in reverse order, printing it out
 
 states_list.sort(reverse=True)
 
 print(states_list)
 
-#Permanently sort your list in reverse order, printing it out
-
-print(states_list)
-
 #Using the reverse method reverse the list and print it
 
-states_list.sort()
+states_list.reverse()
 
 print(states_list)
